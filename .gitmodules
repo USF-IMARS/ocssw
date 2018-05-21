@@ -1,0 +1,16 @@
+[submodule "run/bin/linux_64"]
+	path = run/bin/linux_64
+	url = https://oceandata.sci.gsfc.nasa.gov/ocssw/bin-linux_64.git
+	branch = v7.5
+[submodule "run/opt/linux_64"]
+	path = run/opt/linux_64
+	url = https://oceandata.sci.gsfc.nasa.gov/ocssw/opt-linux_64.git
+	branch = v7.5
+[submodule "run/data/common"]
+	path = run/data/common
+	url = https://oceandata.sci.gsfc.nasa.gov/ocssw/common.git
+	branch = v7.5
+[submodule "run/scripts"]
+	path = run/scripts
+	url = https://oceandata.sci.gsfc.nasa.gov/ocssw/scripts.git
+	branch = v7.5
