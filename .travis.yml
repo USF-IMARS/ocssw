@@ -6,21 +6,14 @@ branches:
   - master
 
 python:
-  # - "2.6"
   - "2.7"
-  # - "3.3"
-  # - "3.4"
-  # - "3.5"
-  # - "3.5-dev"  # 3.5 development branch
   - "3.6"
-  # - "3.6-dev"  # 3.6 development branch
-  # - "3.7-dev"  # 3.7 development branch
 
 before_install:
   # proxy
   # proxyAuthMethod
   # emptyAuth
-  - git config --global http.sslVersion tlsv1
+  - git config --global http.sslVersion tlsv1.1
   # sslCipherList
   - git config --global http.sslVerify false
   # sslCert
@@ -33,6 +26,10 @@ before_install:
   - git config --global http.noEPSV true
   # userAgent
   - git config --global http.followRedirects true
+
+  - git config --global user.name Default Seadas User
+  - git config --global user.email seadas-user@localhost
+
   - git config --list --show-origin
 
 # command to install dependencies
