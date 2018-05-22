@@ -27,8 +27,8 @@ before_install:
   # userAgent
   - git config --global http.followRedirects true
 
-  - git config --global user.name Default Seadas User
-  - git config --global user.email seadas-user@localhost
+  - git config --global user.name "Default Seadas User"
+  - git config --global user.email "seadas-user@localhost"
 
   - git config --list --show-origin
 
