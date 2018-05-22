@@ -15,6 +15,14 @@ python:
   - "3.6"
   - "3.6-dev"  # 3.6 development branch
   - "3.7-dev"  # 3.7 development branch
+
 # command to install dependencies
 install:
   - ???
+
+before_script:
+  - wget https://oceandata.sci.gsfc.nasa.gov/SeaDAS/seadas_benchmark.tar.gz
+  - tar -xzvf seadas_benchmark.tar.gz
+
+script:
+  - cd benchmark && ./seadas_benchmark.bash
