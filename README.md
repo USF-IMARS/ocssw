@@ -11,3 +11,7 @@ Different methods of install are tested on different branches of this repo:
 * src    : build from source. refs:
     * [/docs/ocssw/](https://oceancolor.gsfc.nasa.gov/docs/ocssw/index.html)
     * [/build_ocssw/](https://seadas.gsfc.nasa.gov/build_ocssw/)
+
+## tests
+Tests used to evaluate successful install or build:
+* [benchmark package](https://seadas.gsfc.nasa.gov/build_ocssw/#test-the-shiny-new-binraries)
