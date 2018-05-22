@@ -18,6 +18,22 @@ python:
 
 before_install:
   - git --version
+  # proxy
+  # proxyAuthMethod
+  # emptyAuth
+  - git config --global http.sslVersion sslv3
+  # sslCipherList
+  - git config --global http.sslVerify false
+  # sslCert
+  # sslKey
+  # sslCertPasswordProtected
+  # sslCAInfo
+  # sslCAPath
+  # pinnedpubkey
+  - git config --global http.sslTry true
+  - git config --global noEPSV true
+  # userAgent
+  - git config --global followRedirects true
   - git config --list --show-origin
 
 # command to install dependencies
