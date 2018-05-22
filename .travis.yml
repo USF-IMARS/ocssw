@@ -1,4 +1,10 @@
 language: python
+
+# blocklist
+branches:
+  except:
+  - master
+
 python:
   - "2.6"
   - "2.7"
@@ -9,6 +15,17 @@ python:
   - "3.6"
   - "3.6-dev"  # 3.6 development branch
   - "3.7-dev"  # 3.7 development branch
+
+before_install:
+  - git config --global http.sslVerify false
+
 # command to install dependencies
 install:
-  - ./install_ocssw.py -v 
+  - ./install_ocssw.py -v
+
+before_script:
+  - wget https://oceandata.sci.gsfc.nasa.gov/SeaDAS/seadas_benchmark.tar.gz
+  - tar -xzvf seadas_benchmark.tar.gz
+
+script:
+  - cd benchmark && ./seadas_benchmark.bash
