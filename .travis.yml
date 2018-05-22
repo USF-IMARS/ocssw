@@ -31,9 +31,9 @@ before_install:
   # sslCAPath
   # pinnedpubkey
   - git config --global http.sslTry true
-  - git config --global noEPSV true
+  - git config --global http.noEPSV true
   # userAgent
-  - git config --global followRedirects true
+  - git config --global http.followRedirects true
   - git config --list --show-origin
 
 # command to install dependencies
